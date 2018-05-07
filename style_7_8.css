@@ -1,0 +1,120 @@
+header{
+	background-color:#333333;
+	width: 100%;
+	height: 80px;
+	color: #ffffff;
+}
+.hcontent{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+h3{
+	display: inline-block;
+}
+.hcontent p{
+	display: inline-block;
+	float: right;
+	margin-top: 5px;
+}
+.hcontent a{
+	color: white;
+}
+#banner{
+	width: 100%;
+	height:300px;
+	background-color:#66bb33;
+	margin-bottom: 10px;
+}
+.sfigure{
+	margin-top: 240px;
+	margin-right: 200px;
+	float: right;
+}
+.figure{
+	display: inline-block;
+	margin-bottom:11px; 
+	border: 1px solid #335e1a;
+	background-color: #9fca86;
+	padding: 12px;
+}
+
+.info-box ul{
+	padding-left: 0;
+	margin: 0 auto;
+	width: 960px;
+	height: 3em;
+}
+hr{
+	background-color:#dddddd;
+	height:1px;
+	width: 100%;
+	border:none;
+	margin-top: 0;
+}
+.info-box ul li{
+	float: left;
+	list-style-type: none;
+	width: 106px;
+}
+.info-box li a{
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	line-height: 50px;
+	color: black;
+	text-align: center;
+	border: 1px solid #eeeeee;
+	border-radius: 25px 25px 0 0;
+	background-color: #eeeeee;
+}
+.info-box li a:focus,.info-box li a:hover{
+	background-color: #ffffff;
+	color:black;
+	border-bottom: none;
+}
+.info-box li a:active{
+	background-color:#ffffff; 
+	color:black;
+}
+
+.panels{
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+.con-box{
+	padding: 80px;
+	border: 1px solid #cccccc;
+	margin: 5px;
+	flex:1 60px;
+}
+
+footer{
+	background-color: #666666;
+	width: 100%;
+	height: 120px;
+	color:white;
+	text-align: center;
+	padding-top: 0.5px;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
