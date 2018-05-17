@@ -1,0 +1,57 @@
+body {
+    height: 1020px;
+}
+
+.left {
+    width: 328px;
+    height: 100%;
+    background-color: #5dc3b1;
+    background-image: url(https://mdn.mozillademos.org/files/13026/fire-ball-icon.png);
+    background-repeat: no-repeat;
+    background-position: 90% 2em;
+    display: inline-block;
+    float: left;
+}
+
+span {
+    font-weight: bold;
+}
+
+h1 {
+    color: grey;
+}
+
+.moto {
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: purple;
+}
+
+a:hover, a:active {
+    color: red;
+}
+
+.right {
+    width: 579px;
+    display: inline-block;
+    margin-left: 40px;
+    height: 100%;
+}
+
+.content {
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2 {
+    background-color: grey;
+    border: 1px dashed purple;
+    border-left: 2px solid black;
+
+}
+
+ul.none {
+    list-style-type: square;
+}
