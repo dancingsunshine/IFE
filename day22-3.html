@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>day 22-3</title>
+</head>
+<body>
+
+
+<script>
+    /*实现一个字符串头尾去除空格的函数
+     注意需要去除的空格，包括全角、半角空格
+     暂时不需要学习和使用正则表达式的方式
+     */
+    function diyTrim(str) {
+        var result = "";
+        var resultA;
+        for (var i = 0; i < str.length; i++) {
+            if (!(str[i] == " " || str[i] == "　")) {
+                resultA = str.slice(i);
+                //console.log("resultA=" + resultA);
+                for (var j = resultA.length - 1; j >= 0; j--) {
+                    if (!(resultA[j] == " " || resultA[j] == "　")) {
+                        result = resultA.slice(0, j + 1)
+                        //console.log("result=" + result);
+                        return result;
+                    }
+                }
+            }
+        }
+        return result;
+    }
+
+    // 测试用例
+    console.log(diyTrim(' a f b    ')); // ->a f b
+    console.log(diyTrim('    ffdaf    ')); // ->ffdaf
+    console.log(diyTrim('1    ')); // ->1
+    console.log(diyTrim('　　f')); // ->f
+    console.log(diyTrim('  　  a f b 　　 ')); // ->a f b
+    console.log(diyTrim(' ')); // ->
+    console.log(diyTrim('　')); // ->
+    console.log(diyTrim('')); // ->
+
+
+    //去掉字符串str中，连续重复的地方
+
+    function removeRepetition(str) {
+        var result = "";
+        var resultA = [];
+        var resultB = [];
+        for (var i = 0; i < str.length; i++) {
+            resultA[i] = str[i];
+        }//首先把字符串转换为数组，否则不能使用.splice方法
+
+        for (var j = 0; j < resultA.length; j++) {
+            if (resultA[j] == resultA[j + 1]) {
+                resultB = resultA.splice(j, 1);
+                j--;//.splice方法使用后会改变原数组长度，所以使用后需要复原j的值。
+                //console.log("b:" + resultB);
+                //console.log("A:" + resultA);
+            }
+        }
+        result=resultA.toString();
+        result=result.replace(/,/g,'');
+        return result;
+    }
+
+    // 测试用例
+    console.log(removeRepetition("aaa")); // ->a
+    console.log(removeRepetition("abbba")); // ->aba
+    console.log(removeRepetition("aabbaabb")); // ->abab
+    console.log(removeRepetition("")); // ->
+    console.log(removeRepetition("abc")); // ->abc
+
+
+</script>
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
